@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  holosplit:
+    build:
+      context: .
+    container_name: holosplit
+    volumes:
+      - .:/home
+    ports:
+      - '5000:5000'
+
